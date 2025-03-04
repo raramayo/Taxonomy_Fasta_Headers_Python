@@ -165,13 +165,16 @@
     REQUIRED:                        "Yes"
     FORMAT:                          "Alphanumeric String"
     DEFAULT:                         "No default"
-    HELP:                            """Genus_Species information (e.g., Homo_sapiens).\nRequired for ENSEMBL and Gencode files.\nMust not be provided for NCBI or UniRef files."""
+    HELP:                            "Genus_Species information (e.g., Homo_sapiens)."
+	                                 "Required for ENSEMBL and Gencode files."
+									 "Must not be provided for NCBI or UniRef files."
 	--------------------------------------------------------------------------------
     FLAG:                            "-o", "--output"
     REQUIRED:                        "No"
     FORMAT:                          "Alphanumeric"
     DEFAULT:                         "Transcripts_Plots_dir_Run01"
-    HELP:                            "Output directory name. If provided and exists, a numeric suffix is added (e.g., Test01)"
+    HELP:                            "Output directory name."
+	                                 "If provided and exists, a numeric suffix is added (e.g., Test01)"
 	--------------------------------------------------------------------------------
     FLAG:                            "-v", "--version"
     REQUIRED:                        "No"
