@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14967828.svg)](https://doi.org/10.5281/zenodo.14967828)
 # Taxonomy_Fasta_Headers
 ![alt text](https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Images/Taxonomy_Fasta_Headers_Logo.png)
 
