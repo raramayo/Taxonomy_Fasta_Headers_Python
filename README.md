@@ -1,5 +1,5 @@
 # Taxonomy_Fasta_Headers
-![alt text](https://github.com/raramayo/Transcripts_Plots_Python/blob/main/Images/Transcripts_Plots_Logo.png)
+![alt text](https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Images/Taxonomy_Fasta_Headers_Logo.png)
 
 ## Overview:
 
