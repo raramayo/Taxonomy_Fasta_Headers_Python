@@ -167,7 +167,7 @@
     DEFAULT:                         "No default"
     HELP:                            "Genus_Species information (e.g., Homo_sapiens)."
 	                                 "Required for ENSEMBL and Gencode files."
-									 "Must not be provided for NCBI or UniRef files."
+	                                 "Must not be provided for NCBI or UniRef files."
 	--------------------------------------------------------------------------------
     FLAG:                            "-o", "--output"
     REQUIRED:                        "No"
