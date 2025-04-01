@@ -143,7 +143,7 @@
   with the output written to the specified directory.
 + ### Show Version:
   ```
-  python3 Transcripts_Plots.py \
+  python3 Taxonomy_Fasta_Headers.py \
   --version
   ```
 ## Script_Flags:
