@@ -176,7 +176,7 @@
     DEFAULT:                         "Name_of_Fasta_File_Provided_[minus .fa]" + "_Tax_Headers.fa"
     HELP:                            "Output file path or directory"
                                      "The output file will be named based on the input"
-									 "file with '_Tax_Headers.fa' appended."
+                                     "file with '_Tax_Headers.fa' appended."
 	--------------------------------------------------------------------------------
     FLAG:                            "-v", "--version"
     REQUIRED:                        "No"
