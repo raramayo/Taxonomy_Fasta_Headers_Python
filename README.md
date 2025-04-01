@@ -1,12 +1,13 @@
 [![alt_text](https://zenodo.org/badge/DOI/10.5281/zenodo.14967827.svg)](https://doi.org/10.5281/zenodo.14967827)
 # Taxonomy_Fasta_Headers
-<center><img src="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Images/Taxonomy_Fasta_Headers_Logo.png" width="400" height="400"></center>
+<img src="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Images/Taxonomy_Fasta_Headers_Logo.png" width="400" height="400" style="display: block; margin: 0 auto">
+
 
 <img src="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Images/Taxonomy_Fasta_Headers_Logo.png" 
         alt="Taxonomy_Fasta_Headers" 
         width="400" 
         height="400" 
-        style="display: block; margin: 0 auto" />
+        style="display: block; margin: 0 auto" >
 
 
 ## Overview:
