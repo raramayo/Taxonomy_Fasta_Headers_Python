@@ -173,9 +173,10 @@
     FLAG:                            "-o", "--output"
     REQUIRED:                        "No"
     FORMAT:                          "Alphanumeric"
-    DEFAULT:                         "Transcripts_Plots_dir_Run01"
-    HELP:                            "Output directory name."
-	                                 "If provided and exists, a numeric suffix is added (e.g., Test01)"
+    DEFAULT:                         "Name_of_Fasta_File_Provided_[minus .fa]" + "_Tax_Headers.fa"
+    HELP:                            "Output file path or directory"
+                                     "The output file will be named based on the input"
+									 "file with '_Tax_Headers.fa' appended."
 	--------------------------------------------------------------------------------
     FLAG:                            "-v", "--version"
     REQUIRED:                        "No"
