@@ -84,7 +84,7 @@
 
 <pre>
 --------------------------------------------------------------------------------
-See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Docs/Code_Overview.md" target="_blank">Code_Overview.md</a>
+<a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Docs/Code_Overview.md" target="_blank">Code_Overview.md</a>
 --------------------------------------------------------------------------------
 </pre>
 
@@ -92,7 +92,7 @@ See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/mai
 
 <pre>
 --------------------------------------------------------------------------------
-See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Docs/Mini_Tutorial.md" target="_blank">Mini_Tutorial.md</a>
+<a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Docs/Mini_Tutorial.md" target="_blank">Mini_Tutorial.md</a>
 --------------------------------------------------------------------------------
 </pre>
 
@@ -164,7 +164,7 @@ See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/mai
 
 <pre>
 --------------------------------------------------------------------------------
-See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python" target="_blank">Taxonomy_Fasta_Headers_Python</a>
+<a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python" target="_blank">Taxonomy_Fasta_Headers_Python</a>
 --------------------------------------------------------------------------------
 </pre>
 
@@ -172,6 +172,6 @@ See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python" target=
 
 <pre>
 --------------------------------------------------------------------------------
-See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/issues" target="_blank">Taxonomy_Fasta_Headers_Python_Issues</a>
+<a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/issues" target="_blank">Taxonomy_Fasta_Headers_Python_Issues</a>
 --------------------------------------------------------------------------------
 </pre>
