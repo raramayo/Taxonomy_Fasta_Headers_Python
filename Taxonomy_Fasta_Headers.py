@@ -44,7 +44,7 @@ You should have received a copy of the GNU General Public License along with
 this program. If not, see <https://www.gnu.org/licenses/>.
 --------------------------------------------------------------------------------
 Version Number:
-Version: 1.0.0
+Version: 1.0.1
 --------------------------------------------------------------------------------
 """
 #-------------------------------------------------------------------------------
@@ -58,10 +58,10 @@ import sys
 script_name = os.path.basename(sys.argv[0])
 
 # Defining Script Current Version
-script_version = "1.0.0"
+script_version = "1.0.1"
 
 # Defining_Script_Current_Version (date '+DATE:%Y/%m/%d%tTIME:%R')
-current_version_date = "DATE:2025/03/03"
+current_version_date = "DATE:2025/03/31"
 #-------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------
@@ -69,9 +69,11 @@ current_version_date = "DATE:2025/03/03"
 #-------------------------------------------------------------------------------
 
 def validate_fasta(file_path):
-    """Check that the file exists and its first line starts with '>'."""
+    """
+    Check that the FASTA file exists and its first line starts with '>'.
+    """
     if not os.path.isfile(file_path):
-        sys.exit("Error: FASTA file not found.")
+        sys.exit("Error: FASTA file not found. Please provide a valid FASTA file.")
     with open(file_path, "r") as f:
         first_line = f.readline()
         if not first_line.startswith(">"):
@@ -140,7 +142,9 @@ def process_gencode_header(header, taxonomy):
     return new_header
 
 def process_file(input_file, database, taxonomy, output_path):
-    """Process each record in the FASTA file and write the modified headers to the output."""
+    """
+    Process each record in the FASTA file and write the modified headers to the output.
+    """
     with open(input_file, "r") as fin, open(output_path, "w") as fout:
         current_header = None
         sequence_lines = []
@@ -184,21 +188,25 @@ def main():
       help="Path to the FASTA file to process."
     )
     parser.add_argument(
-    "-d",
-    "--database",
-    required=True,
-    type=lambda s: s.upper(),
-    choices=["NCBI", "UNIREF", "ENSEMBL", "GENCODE"],
-    help="The database from which the FASTA file originates."
+      "-d",
+      "--database",
+      required=True,
+      type=lambda s: s.upper(),
+      choices=["NCBI", "UNIREF", "ENSEMBL", "GENCODE"],
+      help="The database from which the FASTA file originates."
     )
     parser.add_argument(
       "-t",
       "--taxonomy",
-      help="""Genus_Species information (e.g., Homo_sapiens).\nRequired for ENSEMBL and Gencode files.\nMust not be provided for NCBI or UniRef files."""
+      help="""Genus_Species information (e.g., Homo_sapiens).
+Required for ENSEMBL and Gencode files.
+Must not be provided for NCBI or UniRef files."""
     )
     parser.add_argument(
       "-o", "--output",
-      help="""Output file path or directory.\nIf a directory is provided, the output file will be named\nbased on the input file with '_Tax_Headers.fa' appended."""
+      help="""Output file path or directory.
+If a directory is provided, the output file will be named
+based on the input file with '_Tax_Headers.fa' appended."""
     )
     parser.add_argument(
       "-v",

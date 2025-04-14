@@ -1,4 +1,5 @@
 [![alt_text](https://zenodo.org/badge/DOI/10.5281/zenodo.14967827.svg)](https://doi.org/10.5281/zenodo.14967827)
+
 # Taxonomy_Fasta_Headers
 <p align="center">
 <img src="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Images/Taxonomy_Fasta_Headers_Logo.png" width="400" height="400" style="display: block; margin: 0 auto">
@@ -51,9 +52,9 @@
 ## Authorship:
 
     --------------------------------------------------------------------------------
-	Author:                          Rodolfo Aramayo
-    Work_Email:                      raramayo@tamu.edu
-    Personal_Email:                  rodolfo@aramayo.org
+	Author:         Rodolfo Aramayo
+    Work_Email:     raramayo@tamu.edu
+    Personal_Email: rodolfo@aramayo.org
     --------------------------------------------------------------------------------
 
 ## Copyright:
@@ -76,139 +77,101 @@
 ## Script_Version:
 
 	--------------------------------------------------------------------------------
-	v1.0.0
+	v1.0.1
 	--------------------------------------------------------------------------------
 
+## Script_Logic:
+
+<pre>
+--------------------------------------------------------------------------------
+See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Docs/Code_Overview.md" target="_blank">Code_Overview.md</a>
+--------------------------------------------------------------------------------
+</pre>
+
 ## Script_Usage:
-## Summary of How to Use the Script
-+ ### Input File:
-  + Use the ```-f``` or ```--fasta``` flag to specify the path to your FASTA file.
-  + Example:
-    ```
-    --fasta path/to/your_file.fa
-    ```
-+ ### Database Selection:
-  + Use the ```-d``` or ```--database``` flag to indicate the origin of the FASTA file. Acceptable values are:
-    + NCBI
-    + UniRef
-    + ENSEMBL
-    + Gencode
-  + Example:
-    ```
-    --database NCBI
-    ```
-+ ### Taxonomy Information:
-  + For ENSEMBL and Gencode files, the ```-t``` or ```--taxonomy``` flag is required.
-  + This flag should provide the organism’s taxonomy (e.g., Homo_sapiens or "Homo sapiens").
-  + Examples:
-    ```
-    --taxonomy "Homo sapiens"
-	--taxonomy 'Homo sapiens'
-	--taxonomy Homo_sapiens
-    ```
-  + For NCBI and UniRef files, this flag must not be provided.
-+ ### Output Specification:
-  + Optionally, use the ```-o``` or ```--output``` flag to designate either a full output file path or just a directory.
-    + If a directory is given, the script will create an output file in
-    that directory named based on the input file (with _Tax_Headers.fa
-    appended).
-    + If the full path (directory + filename) is provided, the script will write the output accordingly.
-  + Example (directory):
-    ```
-    --output /path/to/output_directory/
-    ```
-  + Example (full path):
-    ```
-    --output /path/to/output_directory/custom_output.fa
-    ```
-## Example Commands:
-+ ### For a NCBI FASTA File:
-  ```
-  python3 Taxonomy_Fasta_Headers.py \
-  --fasta input_ncbi.fa \
-  --database NCBI
-  ```
-  + This command processes an NCBI FASTA file by extracting taxonomy
-  from the header and writes the output as input_ncbi_Tax_Headers.fa
-  in the same directory as the input file.
-+ ### For an ENSEMBL FASTA File:
-  ```
-  python3 Taxonomy_Fasta_Headers.py \
-  --fasta input_ensembl.fa \
-  --database ENSEMBL \
-  --taxonomy "Homo sapiens" \
-  --output /path/to/output_directory/
-  ```
-  + This command processes an ENSEMBL FASTA file by prepending
-  Homo_sapiens: (converted from the provided taxonomy) to each header,
-  with the output written to the specified directory.
-+ ### Show Version:
-  ```
-  python3 Taxonomy_Fasta_Headers.py \
-  --version
-  ```
+
+<pre>
+--------------------------------------------------------------------------------
+See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Docs/Mini_Tutorial.md" target="_blank">Mini_Tutorial.md</a>
+--------------------------------------------------------------------------------
+</pre>
+
 ## Script_Flags:
 
 	--------------------------------------------------------------------------------
-	FLAG:                            "-f", "--fasta"
-    REQUIRED:                        "Yes"
-    FORMAT:                          "Alphanumeric String"
-    DEFAULT:                         "No default"
-    HELP:                            "Path to the FASTA file to process."
+	FLAG:           "-f", "--fasta"
+    REQUIRED:       "Yes"
+    FORMAT:         "Alphanumeric String"
+    DEFAULT:        "No default"
+    HELP:           "Path to the FASTA file to process."
 	--------------------------------------------------------------------------------
-	FLAG:                            "-d", "--database"
-    REQUIRED:                        "Yes"
-    FORMAT:                          "Alphanumeric String"
-    CHOICES:                         "NCBI", "UNIREF", "ENSEMBL", "GENCODE"
-    DEFAULT:                         "No default"
-    HELP:                            "The database from which the FASTA file originates."
+	FLAG:           "-d", "--database"
+    REQUIRED:       "Yes"
+    FORMAT:         "Alphanumeric String"
+    CHOICES:        "NCBI", "UNIREF", "ENSEMBL", "GENCODE"
+    DEFAULT:        "No default"
+    HELP:           "The database from which the FASTA file originates."
 	--------------------------------------------------------------------------------
-    FLAG:                            "-t", "--taxonomy"
-    REQUIRED:                        "Yes"
-    FORMAT:                          "Alphanumeric String"
-    DEFAULT:                         "No default"
-    HELP:                            "Genus_Species information (e.g., Homo_sapiens)."
-	                                 "Required for ENSEMBL and Gencode files."
-	                                 "Must not be provided for NCBI or UniRef files."
+    FLAG:           "-t", "--taxonomy"
+    REQUIRED:       "Yes"
+    FORMAT:         "Alphanumeric String"
+    DEFAULT:        "No default"
+    HELP:           "Genus_Species information (e.g., Homo_sapiens)."
+	                "Required for ENSEMBL and Gencode files."
+	                "Must not be provided for NCBI or UniRef files."
 	--------------------------------------------------------------------------------
-    FLAG:                            "-o", "--output"
-    REQUIRED:                        "No"
-    FORMAT:                          "Alphanumeric"
-    DEFAULT:                         "Name_of_Fasta_File_Provided_[minus .fa]" + "_Tax_Headers.fa"
-    HELP:                            "Output file path or directory"
-                                     "The output file will be named based on the input"
-                                     "file with '_Tax_Headers.fa' appended."
+    FLAG:           "-o", "--output"
+    REQUIRED:       "No"
+    FORMAT:         "Alphanumeric"
+    DEFAULT:        "Transcripts_Plots_dir_Run01"
+    HELP:           "Output directory name."
+	                "If provided and exists, a numeric suffix is added (e.g., Test01)"
 	--------------------------------------------------------------------------------
-    FLAG:                            "-v", "--version"
-    REQUIRED:                        "No"
-    ACTION:                          "version"
-    FORMAT:                          "Alphanumeric"
-    HELP:                            "Show program version's number and exit"
+    FLAG:           "-v", "--version"
+    REQUIRED:       "No"
+    ACTION:         "version"
+    FORMAT:         "Alphanumeric"
+    HELP:           "Show program version's number and exit"
 	--------------------------------------------------------------------------------
 
 ## Dependencies:
 
 	--------------------------------------------------------------------------------
-    None
+    Python3:        Required:
+                        https://www.python.org/downloads/
 	--------------------------------------------------------------------------------
 
 ## Development/Testing Environment:
 
-	--------------------------------------------------------------------------------
-    Distributor ID:                  Apple, Inc.
-    Description:                     Apple M1 Max
-    Release:                         15.3.1
-    Codename:                        Sequoia
-	--------------------------------------------------------------------------------
+    --------------------------------------------------------------------------------
+    Distributor ID: Apple, Inc.
+    Description:    Apple M1 Max
+    Release:        15.3.1
+    Codename:       Sequoia
+
+    Script was tested with:
+                    | Python Version | matplotlib | pandas | seaborn |
+                    |----------------|------------|--------|---------|
+                    | 3.8.20         | 3.7.5      | 2.0.3  | 0.13.2  |
+                    | 3.9.21         | 3.9.4      | 2.2.3  | 0.13.2  |
+                    | 3.10.16        | 3.10.1     | 2.2.3  | 0.13.2  |
+                    | 3.11.11        | 3.10.1     | 2.2.3  | 0.13.2  |
+                    | 3.12.9         | 3.10.1     | 2.2.3  | 0.13.2  |
+                    | 3.13.2         | 3.10.1     | 2.2.3  | 0.13.2  |
+    --------------------------------------------------------------------------------
 
 ## Repository:
 
-	--------------------------------------------------------------------------------
-    https://github.com/raramayo/Taxonomy_Fasta_Headers_Python
-	--------------------------------------------------------------------------------
+<pre>
+--------------------------------------------------------------------------------
+See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python" target="_blank">Taxonomy_Fasta_Headers_Python</a>
+--------------------------------------------------------------------------------
+</pre>
 
 ## Issues:
 
-	--------------------------------------------------------------------------------
-    https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/issues
-	--------------------------------------------------------------------------------
+<pre>
+--------------------------------------------------------------------------------
+See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/issues" target="_blank">Taxonomy_Fasta_Headers_Python_Issues</a>
+--------------------------------------------------------------------------------
+</pre>
