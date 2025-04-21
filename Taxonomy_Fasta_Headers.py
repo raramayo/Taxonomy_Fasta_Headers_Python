@@ -44,9 +44,10 @@ You should have received a copy of the GNU General Public License along with
 this program. If not, see <https://www.gnu.org/licenses/>.
 --------------------------------------------------------------------------------
 Version Number:
-Version: 1.0.1
+Version: 1.0.2
 --------------------------------------------------------------------------------
 """
+
 #-------------------------------------------------------------------------------
 # Import dependencies
 import argparse
@@ -58,10 +59,10 @@ import sys
 script_name = os.path.basename(sys.argv[0])
 
 # Defining Script Current Version
-script_version = "1.0.1"
+script_version = "1.0.2"
 
 # Defining_Script_Current_Version (date '+DATE:%Y/%m/%d%tTIME:%R')
-current_version_date = "DATE:2025/03/31"
+current_version_date = "DATE:2025/04/21"
 #-------------------------------------------------------------------------------
 
 #-------------------------------------------------------------------------------
@@ -182,13 +183,11 @@ def main():
       formatter_class=argparse.RawTextHelpFormatter
     )
     parser.add_argument(
-      "-f",
       "--fasta",
       required=True,
       help="Path to the FASTA file to process."
     )
     parser.add_argument(
-      "-d",
       "--database",
       required=True,
       type=lambda s: s.upper(),
@@ -196,14 +195,13 @@ def main():
       help="The database from which the FASTA file originates."
     )
     parser.add_argument(
-      "-t",
       "--taxonomy",
       help="""Genus_Species information (e.g., Homo_sapiens).
 Required for ENSEMBL and Gencode files.
 Must not be provided for NCBI or UniRef files."""
     )
     parser.add_argument(
-      "-o", "--output",
+      "--output",
       help="""Output file path or directory.
 If a directory is provided, the output file will be named
 based on the input file with '_Tax_Headers.fa' appended."""

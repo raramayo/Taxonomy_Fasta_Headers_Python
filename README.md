@@ -1,6 +1,7 @@
 [![alt_text](https://zenodo.org/badge/DOI/10.5281/zenodo.14967827.svg)](https://doi.org/10.5281/zenodo.14967827)
 
 # Taxonomy_Fasta_Headers
+
 <p align="center">
 <img src="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/blob/main/Images/Taxonomy_Fasta_Headers_Logo.png" width="400" height="400" style="display: block; margin: 0 auto">
 
@@ -74,13 +75,13 @@
     along with this program. If not, see <https://www.gnu.org/licenses/>.
     --------------------------------------------------------------------------------
 
-## Script_Version:
+## Version:
 
 	--------------------------------------------------------------------------------
-	v1.0.1
+	v1.0.2
 	--------------------------------------------------------------------------------
 
-## Script_Logic:
+## Code_Overview:
 
 <pre>
 --------------------------------------------------------------------------------
@@ -88,7 +89,7 @@
 --------------------------------------------------------------------------------
 </pre>
 
-## Script_Usage:
+## Usage:
 
 <pre>
 --------------------------------------------------------------------------------
@@ -96,23 +97,23 @@
 --------------------------------------------------------------------------------
 </pre>
 
-## Script_Flags:
+## Flags:
 
 	--------------------------------------------------------------------------------
-	FLAG:           "-f", "--fasta"
+	FLAG:           "--fasta"
     REQUIRED:       "Yes"
     FORMAT:         "Alphanumeric String"
     DEFAULT:        "No default"
     HELP:           "Path to the FASTA file to process."
 	--------------------------------------------------------------------------------
-	FLAG:           "-d", "--database"
+	FLAG:           "--database"
     REQUIRED:       "Yes"
     FORMAT:         "Alphanumeric String"
     CHOICES:        "NCBI", "UNIREF", "ENSEMBL", "GENCODE"
     DEFAULT:        "No default"
     HELP:           "The database from which the FASTA file originates."
 	--------------------------------------------------------------------------------
-    FLAG:           "-t", "--taxonomy"
+    FLAG:           "--taxonomy"
     REQUIRED:       "Yes"
     FORMAT:         "Alphanumeric String"
     DEFAULT:        "No default"
@@ -120,7 +121,7 @@
 	                "Required for ENSEMBL and Gencode files."
 	                "Must not be provided for NCBI or UniRef files."
 	--------------------------------------------------------------------------------
-    FLAG:           "-o", "--output"
+    FLAG:           "--output"
     REQUIRED:       "No"
     FORMAT:         "Alphanumeric"
     DEFAULT:        "Transcripts_Plots_dir_Run01"
@@ -133,6 +134,12 @@
     FORMAT:         "Alphanumeric"
     HELP:           "Show program version's number and exit"
 	--------------------------------------------------------------------------------
+    FLAG:           "-h", "--help"
+    REQUIRED:       No
+    ACTION:         help
+    FORMAT:         Alphanumeric String
+    HELP:           show this help message and exit
+    --------------------------------------------------------------------------------
 
 ## Dependencies:
 
