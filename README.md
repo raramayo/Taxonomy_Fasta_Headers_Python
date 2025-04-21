@@ -104,30 +104,30 @@
     REQUIRED:       Yes
     FORMAT:         Alphanumeric String
     DEFAULT:        No default
-    HELP:           Path to the FASTA file to process.
+    HELP:           Path to the FASTA file to process
 	--------------------------------------------------------------------------------
 	FLAG:           "--database"
     REQUIRED:       Yes
     FORMAT:         Alphanumeric String
     CHOICES:        'NCBI', 'UNIREF', 'ENSEMBL', 'GENCODE'
     DEFAULT:        No default
-    HELP:           The database from which the FASTA file originates.
+    HELP:           The database from which the FASTA file originates
 	--------------------------------------------------------------------------------
     FLAG:           "--taxonomy"
     REQUIRED:       Yes
     FORMAT:         Alphanumeric String
     DEFAULT:        No default
-    HELP:           Genus_Species information (e.g., Homo_sapiens).
-	                Required for ENSEMBL and Gencode files.
-	                Must not be provided for NCBI or UniRef files.
+    HELP:           Genus_Species information (e.g., 'Homo_sapiens')
+	                Required for ENSEMBL and Gencode files
+	                Must not be provided for NCBI or UniRef files
 	--------------------------------------------------------------------------------
     FLAG:           "--output"
     REQUIRED:       No
     FORMAT:         Alphanumeric
     DEFAULT:        No default
-    HELP:           Output file path or directory.
+    HELP:           Output file path or directory
 	                If a directory is provided, the output file will be named
-                    based on the input file with '_Tax_Headers.fa' appended.
+                    based on the input file with '_Tax_Headers.fa' appended
 	--------------------------------------------------------------------------------
     FLAG:           "-v", "--version"
     REQUIRED:       No
