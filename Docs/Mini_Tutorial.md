@@ -111,11 +111,11 @@
 + ### Help:
 
   ```
-  python3 Taxonomy_Fasta_Headers.py -v
+  python3 Taxonomy_Fasta_Headers.py -h
 
   or
 
-  python3 Taxonomy_Fasta_Headers.py --version
+  python3 Taxonomy_Fasta_Headers.py --help
   ```
 
 ## Repository:
