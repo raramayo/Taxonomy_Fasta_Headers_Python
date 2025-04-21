@@ -253,7 +253,7 @@ based on the input file with '_Tax_Headers.fa' appended."""
         output_file = os.path.join(os.path.dirname(args.fasta), os.path.splitext(base_name)[0] + "_Tax_Headers.fa")
 
     process_file(args.fasta, args.database, taxonomy, output_file)
-    print(f"Processing complete. Output written to {output_file}")
+    #### print(f"Processing complete. Output written to {output_file}")
 
 if __name__ == "__main__":
     main()
