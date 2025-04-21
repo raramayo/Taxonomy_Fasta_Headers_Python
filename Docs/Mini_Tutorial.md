@@ -2,11 +2,11 @@
 
 # Taxonomy_Fasta_Headers Mini Tutorial
 
-## Summary of How to Use the Script
+## Summary of How to Use the Script:
 
 + ### Input File:
 
-  + Use the ```-f``` or ```--fasta``` flag to specify the path to your FASTA file.
+  + Use the `--fasta` flag to specify the path to your FASTA file.
 
   + Example:
 
@@ -16,7 +16,7 @@
 
 + ### Database Selection:
 
-  + Use the ```-d``` or ```--database``` flag to indicate the origin of the FASTA file. Acceptable values are:
+  + Use the `--database` flag to indicate the origin of the FASTA file. Acceptable values are:
 
     + NCBI
 
@@ -34,7 +34,7 @@
 
 + ### Taxonomy Information:
 
-  + For ENSEMBL and Gencode files, the ```-t``` or ```--taxonomy``` flag is required.
+  + For ENSEMBL and Gencode files, the `--taxonomy` flag is required.
 
   + This flag should provide the organism’s taxonomy (e.g., Homo_sapiens or "Homo sapiens").
 
@@ -50,7 +50,7 @@
 
 + ### Output Specification:
 
-  + Optionally, use the ```-o``` or ```--output``` flag to designate either a full output file path or just a directory.
+  + Optionally, use the `--output` flag to designate either a full output file path or just a directory.
 
     + If a directory is given, the script will create an output file in
     that directory named based on the input file (with _Tax_Headers.fa
@@ -98,11 +98,24 @@
   Homo_sapiens: (converted from the provided taxonomy) to each header,
   with the output written to the specified directory.
 
-+ ### Show Version:
++ ### Version:
 
   ```
-  python3 Transcripts_Plots.py \
-  --version
+  python3 Taxonomy_Fasta_Headers.py -v
+
+  or
+
+  python3 Taxonomy_Fasta_Headers.py --version
+  ```
+
++ ### Help:
+
+  ```
+  python3 Taxonomy_Fasta_Headers.py -v
+
+  or
+
+  python3 Taxonomy_Fasta_Headers.py --version
   ```
 
 ## Repository:

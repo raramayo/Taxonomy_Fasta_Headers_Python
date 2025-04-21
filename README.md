@@ -33,7 +33,7 @@
     database.
     --------------------------------------------------------------------------------
 
-## Motivation
+## Motivation:
 
 	--------------------------------------------------------------------------------
     Computational genomics encompasses the searching, clustering,
