@@ -4,132 +4,132 @@
 
 ## Summary of How to Use the Script:
 
-+ ### Input File:
+### Input File:
 
-  + Use the `--fasta` flag to specify the path to your FASTA file.
++ Use the `--fasta` flag to specify the path to your FASTA file.
 
-  + Example:
++ Example:
 
-    ```
-    --fasta path/to/your_file.fa
-    ```
+```
+--fasta path/to/your_file.fa
+```
 
-+ ### Database Selection:
+### Database Selection:
 
-  + Use the `--database` flag to indicate the origin of the FASTA file. Acceptable values are:
++ Use the `--database` flag to indicate the origin of the FASTA file. Acceptable values are:
 
-    + NCBI
++ NCBI
 
-    + UniRef
++ UniRef
 
-    + ENSEMBL
++ ENSEMBL
 
-    + Gencode
++ Gencode
 
-  + Example:
++ Example:
 
-	```
-    --database NCBI
-    ```
+```
+--database NCBI
+```
 
-+ ### Taxonomy Information:
+### Taxonomy Information:
 
-  + For ENSEMBL and Gencode files, the `--taxonomy` flag is required.
++ For ENSEMBL and Gencode files, the `--taxonomy` flag is required.
 
-  + This flag should provide the organism’s taxonomy (e.g., Homo_sapiens or "Homo sapiens").
++ This flag should provide the organism’s taxonomy (e.g., Homo_sapiens or "Homo sapiens").
 
-  + Examples:
++ Examples:
 
-    ```
-    --taxonomy "Homo sapiens"
-	--taxonomy 'Homo sapiens'
-	--taxonomy Homo_sapiens
-    ```
+```
+--taxonomy "Homo sapiens"
+--taxonomy 'Homo sapiens'
+--taxonomy Homo_sapiens
+```
 
-  + For NCBI and UniRef files, this flag must not be provided.
++ For NCBI and UniRef files, this flag must not be provided.
 
-+ ### Output Specification:
+### Output Specification:
 
-  + Optionally, use the `--output` flag to designate either a full output file path or just a directory.
++ Optionally, use the `--output` flag to designate either a full output file path or just a directory.
 
-    + If a directory is given, the script will create an output file in
-    that directory named based on the input file (with _Tax_Headers.fa
-    appended).
++ If a directory is given, the script will create an output file in
+  that directory named based on the input file (with _Tax_Headers.fa
+  appended).
 
-    + If the full path (directory + filename) is provided, the script will write the output accordingly.
++ If the full path (directory + filename) is provided, the script will write the output accordingly.
 
-  + Example (directory):
++ Example (directory):
 
-    ```
-    --output /path/to/output_directory/
-    ```
+```
+--output /path/to/output_directory/
+```
 
-  + Example (full path):
++ Example (full path):
 
-    ```
-    --output /path/to/output_directory/custom_output.fa
-    ```
+```
+--output /path/to/output_directory/custom_output.fa
+```
 
 ## Example Commands:
 
-+ ### For a NCBI FASTA File:
+### For a NCBI FASTA File:
 
-  ```
-  python3 Taxonomy_Fasta_Headers.py \
-  --fasta input_ncbi.fa \
-  --database NCBI
-  ```
+```
+python3 Taxonomy_Fasta_Headers.py \
+--fasta input_ncbi.fa \
+--database NCBI
+```
 
-  + This command processes an NCBI FASTA file by extracting taxonomy
++ This command processes an NCBI FASTA file by extracting taxonomy
   from the header and writes the output as input_ncbi_Tax_Headers.fa
   in the same directory as the input file.
 
-+ ### For an ENSEMBL FASTA File:
+### For an ENSEMBL FASTA File:
 
-  ```
-  python3 Taxonomy_Fasta_Headers.py \
-  --fasta input_ensembl.fa \
-  --database ENSEMBL \
-  --taxonomy "Homo sapiens" \
-  --output /path/to/output_directory/
-  ```
+```
+python3 Taxonomy_Fasta_Headers.py \
+--fasta input_ensembl.fa \
+--database ENSEMBL \
+--taxonomy "Homo sapiens" \
+--output /path/to/output_directory/
+```
 
-  + This command processes an ENSEMBL FASTA file by prepending
++ This command processes an ENSEMBL FASTA file by prepending
   Homo_sapiens: (converted from the provided taxonomy) to each header,
   with the output written to the specified directory.
 
-+ ### Version:
+### Version:
 
-  ```
-  python3 Taxonomy_Fasta_Headers.py -v
+```
+python3 Taxonomy_Fasta_Headers.py -v
+```
 
-  or
+or
 
-  python3 Taxonomy_Fasta_Headers.py --version
-  ```
+```
+python3 Taxonomy_Fasta_Headers.py --version
+```
 
-+ ### Help:
+### Help:
 
-  ```
-  python3 Taxonomy_Fasta_Headers.py -h
+```
+python3 Taxonomy_Fasta_Headers.py -h
+```
 
-  or
+or
 
-  python3 Taxonomy_Fasta_Headers.py --help
-  ```
+```
+python3 Taxonomy_Fasta_Headers.py --help
+```
 
 ## Repository:
 
 <pre>
---------------------------------------------------------------------------------
 See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python" target="_blank">Taxonomy_Fasta_Headers_Python</a>
---------------------------------------------------------------------------------
 </pre>
 
 ## Issues:
 
 <pre>
---------------------------------------------------------------------------------
 See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/issues" target="_blank">Taxonomy_Fasta_Headers_Python_Issues</a>
---------------------------------------------------------------------------------
 </pre>
