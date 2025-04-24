@@ -7,7 +7,6 @@
 ### Input File:
 
 + Use the `--fasta` flag to specify the path to your FASTA file.
-
 + Example:
 
 ```
@@ -17,10 +16,10 @@
 ### Database Selection:
 
 + Use the `--database` flag to indicate the origin of the FASTA file. Acceptable values are:
-+ NCBI
-+ UniRef
-+ ENSEMBL
-+ Gencode
+  + NCBI
+  + UniRef
+  + ENSEMBL
+  + Gencode
 + Example:
 
 ```
@@ -30,9 +29,7 @@
 ### Taxonomy Information:
 
 + For ENSEMBL and Gencode files, the `--taxonomy` flag is required.
-
 + This flag should provide the organism’s taxonomy (e.g., Homo_sapiens or "Homo sapiens").
-
 + Examples:
 
 ```
@@ -46,13 +43,10 @@
 ### Output Specification:
 
 + Optionally, use the `--output` flag to designate either a full output file path or just a directory.
-
 + If a directory is given, the script will create an output file in
   that directory named based on the input file (with _Tax_Headers.fa
   appended).
-
 + If the full path (directory + filename) is provided, the script will write the output accordingly.
-
 + Example (directory):
 
 ```
