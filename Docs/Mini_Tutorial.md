@@ -17,15 +17,10 @@
 ### Database Selection:
 
 + Use the `--database` flag to indicate the origin of the FASTA file. Acceptable values are:
-
 + NCBI
-
 + UniRef
-
 + ENSEMBL
-
 + Gencode
-
 + Example:
 
 ```
@@ -125,11 +120,11 @@ python3 Taxonomy_Fasta_Headers.py --help
 ## Repository:
 
 <pre>
-See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python" target="_blank">Taxonomy_Fasta_Headers_Python</a>
+<a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python" target="_blank">Taxonomy_Fasta_Headers_Python</a>
 </pre>
 
 ## Issues:
 
 <pre>
-See: <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/issues" target="_blank">Taxonomy_Fasta_Headers_Python_Issues</a>
+<a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/issues" target="_blank">Taxonomy_Fasta_Headers_Python_Issues</a>
 </pre>
