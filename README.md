@@ -169,3 +169,25 @@ HELP:           show this help message and exit
 <pre>
 <a href="https://github.com/raramayo/Taxonomy_Fasta_Headers_Python/issues" target="_blank">Taxonomy_Fasta_Headers_Python_Issues</a>
 </pre>
+
+## Citation:
+
+```
+@misc{RN166,
+   author = {Aramayo, Rodolfo},
+   title = {Taxonomy_Fasta_Headers_Python},
+   publisher = {CERN Data Centre & InvenioRDM},
+   month = {2025-04-14},
+   keywords = {Bioinformatics
+comparative genomics
+ensembl
+gene annotation
+genome annotation
+genome browsers},
+   DOI = {10.5281/zenodo.15216319},
+   url = {https://doi.org/10.5281/zenodo.15216319},
+   year = {2025},
+   type = {Dataset}
+}
+
+```
